@@ -6,8 +6,14 @@ import { data } from "../data/data";
 
 export function getAsteroidsDiscoveredAfterYear(data, year) {
   // Your code goes here...
+  const discovered = data.asteroids.discoveryYear;
+
+  const AfterYear = discovered.filter(elm => elm > year);
+
+  return AfterYear;
 }
 
+getAsteroidsDiscoveredAfterYear(data, 2000);
 
 
 // === TEST YOURSELF ===
