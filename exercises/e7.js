@@ -6,6 +6,9 @@ import { data } from "../data/data";
 
 export function getPlanetsNamesWithMoons(data) {
   // Your code goes here...
+  const names = data.planets.name;
+
+  const moons = names.filter()
 }
 
 

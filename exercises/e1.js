@@ -6,9 +6,9 @@ import { data } from "../data/data";
 
 export function getPlanetNames(data) {
   // Your code goes here...
-  const planets = data.planets;
+  
   //Get name of all planets
-  const names = planets.name;
+  const names = data.planets.name;
 
   return names;
 }
