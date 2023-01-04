@@ -8,7 +8,7 @@ export function getPlanetNames(data) {
   // Your code goes here...
   
   //Get name of all planets
-  const names = data.planets.name;
+  const names = data.planets.map(planet => planet.name);
 
   return names;
 }

@@ -6,6 +6,12 @@ import { data } from "../data/data";
 
 export function getGreatestDiscoveryYear(data) {
   // Your code goes here...
+  const years = data.asteroids.discoveryYear;
+
+  
+
+  const GreatestYear = mode(years);
+  return GreatestYear;
 }
 
 
