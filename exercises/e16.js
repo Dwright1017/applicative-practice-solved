@@ -6,9 +6,31 @@ import { data } from "../data/data";
 
 export function getGreatestDiscoveryYear(data) {
   // Your code goes here...
-  const years = data.asteroids.discoveryYear;
-
+  const years = data.asteroids.map(asteroid => asteroid.discoveryYear);
   
+  //Function to find mode
+  function mode(array) {
+    let mode = 0
+    let modeCount = 0
+    let curValue = 0
+    let curCount = 0
+    for (let i=1; i < array.length; i++) {
+      if (array[i] == curValue) {
+        curCount = curCount + 1;
+      } else {
+        if (curCount > modeCount) {
+          mode = curValue;
+          modeCount = curCount;
+        }
+        curValue = array[i];
+        curCount = 1;
+       }
+      }     
+    if (curCount > modeCount) {
+      mode = curValue
+    }
+    return mode;
+  }
 
   const GreatestYear = mode(years);
   return GreatestYear;

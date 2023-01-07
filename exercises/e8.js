@@ -11,7 +11,7 @@ export function findPlanetNameByMoon(data, moonName) {
   return moon.name;
 }
 
-findPlanetNameByMoon(data, 'Perdita');
+findPlanetNameByMoon(data, 'Télesto');
 
 
 // === TEST YOURSELF ===
